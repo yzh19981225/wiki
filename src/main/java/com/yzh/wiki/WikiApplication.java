@@ -9,6 +9,5 @@ public class WikiApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(WikiApplication.class, args);
 	}
-	//增加点备注
-	//再加点
+
 }
