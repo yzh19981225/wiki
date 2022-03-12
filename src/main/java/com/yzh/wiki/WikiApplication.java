@@ -1,6 +1,6 @@
 package com.yzh.wiki;
 
-import com.oracle.tools.packager.Log;
+import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -9,6 +9,7 @@ import org.springframework.core.env.Environment;
 
 
 @SpringBootApplication
+@MapperScan("com.yzh.wiki.mapper")
 public class WikiApplication {
     private static final Logger LOG = LoggerFactory.getLogger(WikiApplication.class);
 
