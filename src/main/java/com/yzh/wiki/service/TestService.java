@@ -1,6 +1,6 @@
 package com.yzh.wiki.service;
 
-import com.yzh.wiki.domian.Test;
+import com.yzh.wiki.domain.Test;
 import com.yzh.wiki.mapper.TestMapper;
 import org.springframework.stereotype.Service;
 
@@ -13,6 +13,7 @@ public class TestService {
     private TestMapper testMapper;
 
     public List<Test> list() {
-        return testMapper.list();
+        return testMapper.selectByExample(null);
     }
+
 }

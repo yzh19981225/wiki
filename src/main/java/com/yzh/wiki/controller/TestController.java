@@ -1,6 +1,6 @@
 package com.yzh.wiki.controller;
 
-import com.yzh.wiki.domian.Test;
+import com.yzh.wiki.domain.Test;
 import com.yzh.wiki.service.TestService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,6 +12,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @RestController
+@RequestMapping("/test")
 public class TestController {
     @Value("${test.name:yzhqss}")
     private String testHello;
@@ -23,7 +24,7 @@ public class TestController {
         return "hello world";
     }
 
-    @GetMapping("/test/list")
+    @GetMapping("/list")
     public List<Test> list() {
         return testService.list();
     }
