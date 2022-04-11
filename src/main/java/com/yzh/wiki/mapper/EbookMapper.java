@@ -2,8 +2,9 @@ package com.yzh.wiki.mapper;
 
 import com.yzh.wiki.domain.Ebook;
 import com.yzh.wiki.domain.EbookExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface EbookMapper {
     long countByExample(EbookExample example);
@@ -24,7 +25,7 @@ public interface EbookMapper {
 
     int updateByExample(@Param("record") Ebook record, @Param("example") EbookExample example);
 
-    int updateByPrimaryKeySelective(Ebook record);
+    int 不(Ebook record);
 
     int updateByPrimaryKey(Ebook record);
 }

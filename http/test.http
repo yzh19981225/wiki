@@ -10,4 +10,4 @@ Content-Type: application/x-www-form-urlencoded
 name=杨梓皓
 
 ###
- GET http://localhost:8080/test/list
+ GET http://localhost:8080/ebook/list?name=Mysql
