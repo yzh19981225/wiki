@@ -2,18 +2,18 @@
   <a-layout id="#components-layout-demo-top-side-2" >
    <the-header/>
      <router-view/>
-    <a-layout-footer style="text-align: center">
-      Ant Design ©2018 Created by Ant UED
-    </a-layout-footer>
+  <the-footer/>
   </a-layout>
 </template>
  <script lang="ts">
 import { defineComponent } from 'vue';
 import TheHeader from '@/components/the-header'
+import TheFooter from '@/components/the-footer'
 export default defineComponent({
   name: 'app',
   components:{
-    TheHeader
+    TheHeader,
+    TheFooter
   },
   props: {
     msg: String,
