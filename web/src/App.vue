@@ -1,22 +1,20 @@
 <template>
-  <a-layout id="#components-layout-demo-top-side-2" >
-   <the-header/>
-     <router-view/>
-  <the-footer/>
+  <a-layout id="#components-layout-demo-top-side-2">
+    <the-header/>
+    <router-view/>
+    <the-footer/>
   </a-layout>
 </template>
- <script lang="ts">
-import { defineComponent } from 'vue';
+<script lang="ts">
+import {defineComponent} from 'vue';
 import TheHeader from '@/components/the-header'
 import TheFooter from '@/components/the-footer'
+
 export default defineComponent({
   name: 'app',
-  components:{
+  components: {
     TheHeader,
     TheFooter
-  },
-  props: {
-    msg: String,
   },
 });
 </script>
